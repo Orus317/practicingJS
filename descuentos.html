@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos </title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo ejercicio</p>
+    </header>
+
+    <section>
+        <h2>Cálculo de precio a pagar en base al descuento</h2>
+        <form>
+            <label for="InputPrice">Escribe el precio del producto: </label>
+            <input type="number" id="InputPrice"><br>
+            <label for="InputDiscount">Escribe el descuento del producto</label>
+            <input type="number" id="InputDiscount" placeholder="%"><br>
+            <p for="InputCoupons" style="display: inline;">Cupones:</p>
+            <div>
+                <input type="radio" value="0" id="Input0" name="Coupon" checked="checked">
+                <label for="Input5">No tengo ningún cupón</label>
+            </div>
+            <div>
+                <input type="radio" value="5" id="Input5" name="Coupon">
+                <label for="Input5">5%</label>
+            </div>
+            <div>
+                <input type="radio" value="15" id="Input15" name="Coupon">
+                <label for="Input15">15%</label>
+            </div>
+            <div>
+                <input type="radio" value="20" id="Input20" name="Coupon">
+                <label for="Input20">20%</label>
+            </div>
+            <div>
+                <input type="radio" value="25" id="Input25" name="Coupon">
+                <label for="Input25">25%</label><br>
+            </div>
+            <button type="button" onclick="onClickCalculateFinalPrice()">Calcular el precio final</button>
+            <p id="ResultP"></p>
+        </form>
+        
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
